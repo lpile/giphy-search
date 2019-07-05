@@ -1,0 +1,12 @@
+<h1>GIFS</h1>
+
+<h2><%= @gifs.count %> Results</h2>
+
+<% @gifs.each do |gif| %>
+  <ul class="gif">
+    <li class="gif-title">Title: <%= gif.title %></li>
+    <li class="gif-id">Id: <%= gif.id %></li>
+    <li class="gif-url">URL: <%= gif.url %></li>
+    <img src="<%= gif.gif %>" class="gif-gif">
+  </ul>
+<% end %>
