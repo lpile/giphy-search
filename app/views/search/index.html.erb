@@ -1,8 +1,8 @@
 <h1>GIFS</h1>
 
-<h2><%= @gifs.count %> Results</h2>
+<h2><%= facade.gif_count %> Results</h2>
 
-<% @gifs.each do |gif| %>
+<% facade.gifs.each do |gif| %>
   <ul class="gif">
     <li class="gif-title">Title: <%= gif.title %></li>
     <li class="gif-id">Id: <%= gif.id %></li>
